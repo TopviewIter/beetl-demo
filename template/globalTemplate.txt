@@ -1,0 +1,5 @@
+<%
+for(r in result){
+%>
+hello,${r};
+<%}%>

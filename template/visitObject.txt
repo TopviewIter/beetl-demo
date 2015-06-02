@@ -1,0 +1,48 @@
+${list.~size}
+${map.~size}
+${result}
+<hr>
+
+//遍历list
+<%
+for(name in list){
+%>
+hello,${name}
+<%
+}
+%>
+
+//直接访问list与map
+${list[0]}
+${map['result']}
+
+//遍历map中的list
+<%
+for(name in map['result']){
+%>
+hello,${name}
+<%
+}
+%>
+
+//遍历map
+<%
+for(entry in m){
+var key = entry.key;
+var value = entry.value;
+println("map里面的元素:" + key + "-" + value);
+}
+%>
+
+//当要遍历的map为空时
+<%
+if(mm != null){
+	for(entry in mm){
+	
+	}elsefor{
+	print("没有进入map的遍历");
+	}
+}else{
+	print("当前map为空");
+}
+%>

@@ -1,0 +1,17 @@
+<%
+if(name == null){
+%>
+对不起,名字不能为空
+<%
+}else if(password == null || password == ""){
+%>
+对不起,密码不能为空
+<%
+}else if(age < 0){
+%>
+对不起,年龄不能小于0
+<%
+}else{
+print("恭喜你,验证通过" + name + " " + password + " " + age);
+}
+%>

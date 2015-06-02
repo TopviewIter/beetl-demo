@@ -1,0 +1,10 @@
+<%
+	/*
+	变量的定义
+	*/
+	var a = 2;
+	var b = 3;
+	var result = a + b;
+%>
+the result is : ${result}
+${ {key : 1,value : 2 \} }
